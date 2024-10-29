@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
-    <title>Document</title>
+    <title>Library</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">Library</h1>
+        <button class="addBook">Add Book</button>
+    </header>
+
+    <main class="main">
+        <div class="container"></div>
+    </main>
+
+    <footer class="footer">
+        <h2 class="title">My Library Collection</h2>
+    </footer>
+
+    <!-- Add Book Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Add</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Book Modal -->
+    <div class="edit-modal">
+        <div class="modal-content">
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="editTitle">Title:</label>
+                    <input type="text" id="editTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editAuthor">Author:</label>
+                    <input type="text" id="editAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="editPages">Pages:</label>
+                    <input type="number" id="editPages" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Save</button>
+                    <button type="button" class="edit-cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/display.js"></script>
 </body>
-<script src="Scripts/script.js"></script>
 </html>
